@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalsty</title>
+    <!-- boxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./logo.png" alt="" style="width: 75px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ml-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">About US</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">Ads</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <a href="#" class="CustomButton">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner section -->
+    <section id="banner" class="section-p1 section-m1">
+        <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+                <div class="card m-3 swiper-slide" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./d1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="#" class="CustomButton">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 swiper-slide" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./d1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="#" class="CustomButton">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 swiper-slide" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./d1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="#" class="CustomButton">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 swiper-slide" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./d1.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="#" class="CustomButton">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    
+    <!-- Icons -->
+    <section class="Icons">
+        <div class="IconBox">
+            <div class="IconBox-Image">
+                <img src="./icons1.png" alt="">
+            </div>
+            <div class="IconBox-Description mt-3">
+                <h3>جلستي في المركز</h3>
+            </div>
+        </div>
+        <div class="IconBox">
+            <div class="IconBox-Image">
+                <img src="./icons2.png" alt="">
+            </div>
+            <div class="IconBox-Description mt-3">
+                <h3>جلستيي في المنزل</h3>
+            </div>
+        </div>
+        <div class="IconBox">
+            <div class="IconBox-Image">
+                <img src="./icons3.png" alt="">
+            </div>
+            <div class="IconBox-Description mt-3">
+                <h3>جلستي اونالين</h3>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- search section -->
+    <div class="appointment-search-container">
+        <h3>Find Best HealthCare</h3>
+        <div class="appointment-search">
+            <div class="appo-search-country">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./jordan.png" alt="Jordan Flag">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#"><img src="./Egypt.png" alt="Egypt Flag"> Egypt</a></li>
+                </ul>
+            </div>
+            <!-- Location Search Box -->
+            <div class="appo-search-box">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Treatment
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Treatment 1</a></li>
+                    <li><a class="dropdown-item" href="#">Treatment 2</a></li>
+                    <li><a class="dropdown-item" href="#">Treatment 3</a></li>
+                    <li><a class="dropdown-item" href="#">Treatment 4</a></li>
+                </ul>
+            </div>
+            <!-- Doctor Search Box -->
+            <div class="appo-search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search By Doctor Name">
+            </div>
+            <!-- Search Button -->
+            <a href="./Pages/Search.html">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+    <!-- Landing -->
+    <section class="landing">
+        <h1>احجز جلستك مجـــانا</h1>
+    </section>
+    <!-- Specialization -->
+    <section class="specialization container">
+        <div class="title">Specialization</div>
+        <div class="specializationCards">
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">Card title</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">Card title</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">Card title</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">Card title</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">Card title</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">Card title</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">Card title</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">Card title</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Treatment -->
+    <section class="specialization container">
+        <div class="title">Treatment</div>
+        <div class="specializationCards">
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">الاستشارات والعلاج النفسي غير الدوائي</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">الاستشارات الزوجية والعلاج الزواجي</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">استشارات للمشاكل الطلابية والجامعية</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">جلسات التربية الخاصة</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">جلسات علاج النطق والتخاطب</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">جلسات العلاج الوظيفي</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">جلسات العلاج الطبيعي</h5>
+                </div>
+            </div>
+            <div class="card m-3" style="width: 18rem;">
+                <img src="./AboutUsBg.jpg" class="card-img-top" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                    <h5 class="card-title customH">جلسات تعديل السلوك </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Jalsty -->
+    <section class="specialization">
+        <div class="title">لماذا جلستي</div>
+        <div class="whyCards">
+            <div class="WhyBox">
+                <div class="whyBox-img">
+                    <img src="./why1.png" alt="">
+                </div>
+                <div class="whyBox-data">
+                    خبراء موثوقين
+                </div>
+            </div>
+            <div class="WhyBox">
+                <div class="whyBox-img">
+                    <img src="./why2.png" alt="">
+                </div>
+                <div class="whyBox-data">
+                    متابعة مستمرة
+                </div>
+            </div>
+            <div class="WhyBox">
+                <div class="whyBox-img">
+                    <img src="./why3.png" alt="">
+                </div>
+                <div class="whyBox-data">
+                    نصلك اينما كنت
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feedback -->
+    <section class="specialization container feedback">
+        <div class="title">FeedBack</div>
+        <div class="whyCards">
+            <div class="t-profile">
+                <!--img-->
+                <div class="t-profile-img">
+                    <img alt="" src="./d1.png">
+                </div>
+                <!--text-->
+                <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>From China</span>
+                    <div class="t-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="t-profile">
+                <!--img-->
+                <div class="t-profile-img">
+                    <img alt="" src="./d1.png">
+                </div>
+                <!--text-->
+                <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>From China</span>
+                    <div class="t-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="t-profile">
+                <!--img-->
+                <div class="t-profile-img">
+                    <img alt="" src="./d1.png">
+                </div>
+                <!--text-->
+                <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>From China</span>
+                    <div class="t-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="t-profile">
+                <!--img-->
+                <div class="t-profile-img">
+                    <img alt="" src="./d1.png">
+                </div>
+                <!--text-->
+                <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>From China</span>
+                    <div class="t-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blogs -->
+    <section class="specialization container mb-3">
+        <div class="title">Blogs</div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img src="./AboutUsBg.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="./AboutUsBg.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="./AboutUsBg.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="./AboutUsBg.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="./AboutUsBg.jpg" class="card-img-top" alt="..." style="height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Are you Speciliest -->
+    <section class="UserSpeciliest container" style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+        <div class="UserSpeciliestImage">
+            <img src="./AboutUsBg.jpg" alt="" style="max-width: 600px;">
+        </div>
+
+        <div class="UserSpeciliest card-body">
+            <h2 class="card-title customH" style="text-align: center;">Are you a specialist?</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dicta quam est. Quidem eius maxime, provident, sed, harum earum cum magni commodi aut facere quasi facilis laborum perspiciatis voluptatibus. Non!</p>
+        </div>
+    </section>
+    <!-- Are you Speciliest -->
+    <section class="UserSpeciliest container" style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+        <div class="UserSpeciliestImage">
+            <img src="./AboutUsBg.jpg" alt="" style="max-width: 600px;">
+        </div>
+
+        <div class="UserSpeciliest card-body">
+            <h2 class="card-title customH" style="text-align: center;">Are you Looking For specialist?</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat totam necessitatibus aliquid, commodi veniam, magni illo earum, molestiae expedita aut placeat provident cum ratione sequi porro suscipit est cupiditate aperiam.</p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!--**comoany-box**-->
+            <div class="footer-company-box">
+                <!--logo-->
+                <a href="#" class="logo"><span class="logo">Jal</span>sty Therapy</a>
+                <!--details-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas neque repudiandae nihil.</p>
+                <!--social-box-->
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>Main Link's</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>External Link's</strong>
+                <ul>
+                    <li><a href="#">Our Product's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Trem's and Condition's</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>External Link's</strong>
+                <ul>
+                    <li><a href="#">Our Product's</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Trem's and Condition's</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--**bottom**********************-->
+        <div class="footer-bottom">
+            <span class="footer-owner">Made By Faris Hassan</span>
+            <span class="copyright">&#169; Copyright 2024 - Fox Design</span>
+        </div>
+    </footer>
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Swiper Js -->
+    <script src="./swiper-bundle.min.js"></script>
+    <!-- custom Js -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
