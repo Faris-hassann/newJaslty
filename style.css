@@ -1,12 +1,12 @@
 /* Global Variables*/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 * {
     margin: 0px;
     padding: 0px;
-    font-family: poppins;
+    font-family: Tajawal;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 :root {
     --header-height: 3.5rem;
 
@@ -133,8 +133,19 @@ section .title{
     align-items: center;
     width: 250px;
     height: 200px;
-    background-color: #ececec;
+    /* background-color: #ececec; */
     border-radius: 5px;
+}
+.IconBox i{
+    font-size: 100px;
+    color: white;
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.IconBox img{
+    width: 135px;
 }
 
 .IconBox-Description h3 {
@@ -242,28 +253,70 @@ section .title{
     }
 }
 
-
 /* (banner) */
 #banner {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
-    background-image: url('./b14.jpg');
-    background-repeat: no-repeat;
-    background-position: 20% 30%;
-    background-color: #041e42;
+    background-color: hsl(191.09deg 44.23% 40.78%);
     padding: 20px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
-
-@media screen and (max-width: 768px) {
-    #banner {
-        background-position: center; /* Center the image on smaller screens */
-        background-size: cover; /* Ensure the background image covers the whole section */
-    }
+.sponserCard {
+    min-width: 350px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
 }
-
-
+.sponserCard img{
+    width: 300px;
+    border-radius: 20px;
+    max-height: 300px;
+}
+.sponserCard .sponserCardData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sponserCardData h3{
+    color: var(--main-color);
+    margin-top: 7px;
+}
+.sponserCardData a{
+    margin-top: 7px;
+    border-radius: 7px;
+    display: inline-flex;
+    background: white;
+    width: 110px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.sponserCardData a:hover{
+    color: white;
+    background: var(--main-color);
+}
+.linkHover:hover{
+    color: white;
+    background: var(--main-color);
+    border-radius: 7px;
+}
+.active{
+    color: white;
+    background: var(--main-color);
+    border-radius: 7px;
+}
 
 /* Popular Container */
 .popular__container {
@@ -298,6 +351,12 @@ section .title{
         flex-direction: column; /* Stack items vertically on smaller screens */
         justify-content: center; /* Ensure proper alignment */
     }
+}
+
+.popular__container, .swiper-wrapper, .swiper-slide {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure padding/borders are included in width */
 }
 
 
@@ -641,5 +700,109 @@ footer {
 
     .appointment-search button {
         width: -webkit-fill-available;
+    }
+}
+
+/* About US Page */
+.parallax {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-1 {
+    background: url('./AboutUsBg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.Class {
+    margin-top: 10px;
+    padding: 20px;
+    height: 80vh;
+    width: 100%;
+}
+
+.firstClass,
+.SecondClass,
+.ThirdClass {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    gap: 3rem;
+}
+
+.second {
+    background-color: var(--section-bg-color);
+}
+
+.SecondClass {
+    flex-direction: row-reverse;
+}
+
+.Class .classImg {
+    width: 550px;
+}
+
+.Class .classImg>img {
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+.Class .classText {
+    max-width: 550px;
+}
+
+.Class .classText h6 {
+    color: var(--main-color);
+}
+
+@media (max-width: 1000px) {
+    .Class {
+        height: auto;
+    }
+
+    .firstClass,
+    .SecondClass,
+    .ThirdClass {
+        flex-direction: column;
+    }
+
+    .SecondClass {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 850px) {
+    .parallax-inner h1 {
+        font-size: 120px;
+    }
+
+    .Class .classImg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .parallax-inner h1 {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .parallax-inner h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    .parallax-inner h1 {
+        font-size: 60px;
     }
 }
