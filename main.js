@@ -1,9 +1,6 @@
 // Initialize Swiper for Popular Container
-// Initialize Swiper for Popular Container
 var swiperPopular = new Swiper(".popular__container", {
-    spaceBetween: 32,
-    grabCursor: true,
-    centeredSlides: true, // Center the slides when there is only 1 slide visible
+    spaceBetween: 16,
     slidesPerView: 'auto', // Automatically adjust the slide width
     loop: true, // Enable loop to cycle through the slides
     autoplay: {
