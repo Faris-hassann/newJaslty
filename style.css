@@ -12,8 +12,9 @@
 
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
-    --main-color: #43bfa9;
-
+    --main-color: #57b6bc;
+    --secondary-color: hsl(175.38deg 24.84% 30.78%);
+    
     /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
@@ -125,10 +126,16 @@ section .title{
     padding: 5px 10px; /* Add some padding for better appearance */
 }
 
-/* LandingMsg */
+/* landingIcon */
+.landingIcon{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
 .landingMsg{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
     background-color: white;
     padding: 15px;
@@ -136,27 +143,23 @@ section .title{
     margin-top: 15px;
 }
 .landingMsg h1{
+    color: var(--secondary-color);
+}
+.landingMsg h3{
     color: var(--main-color);
 }
-
-
-/* Icons */
 .Icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    gap: 9rem;
 }
-
 .IconBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 200px;
-    /* background-color: #ececec; */
-    border-radius: 5px;
 }
 .IconBox i{
     font-size: 100px;
@@ -167,7 +170,7 @@ section .title{
 }
 
 .IconBox img{
-    width: 135px;
+    width: auto;
 }
 
 .IconBox-Description h3 {
