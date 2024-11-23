@@ -105,6 +105,26 @@ section .title{
     font-weight: 600;
 }
 
+/* Header */
+.navbar-brand img {
+    height: 90px;
+    margin-left: 20px;
+}
+.btn-custom {
+    background-color: #66b5ad; /* Custom button color */
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #549e96; /* Hover color */
+}
+.nav-link.active,
+.nav-link:hover {
+    color: #fff !important; /* White text on hover or active */
+    background-color: #66b5ad; /* Same background as the active one */
+    border-radius: 5px; /* Add a rounded look for consistency */
+    padding: 5px 10px; /* Add some padding for better appearance */
+}
+
 /* LandingMsg */
 .landingMsg{
     display: flex;
@@ -118,6 +138,8 @@ section .title{
 .landingMsg h1{
     color: var(--main-color);
 }
+
+
 /* Icons */
 .Icons {
     display: flex;
