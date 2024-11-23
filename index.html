@@ -26,36 +26,38 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./logo.png" alt="" style="width: 75px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+            <!-- Navbar Toggler for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item ml-3">
-                        <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+            <div class="d-flex">
+                <a href="#" class="btn btn-outline-secondary me-2">تسجيل الدخول</a>
+            </div>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">أعلن معنا</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link linkHover" href="#">من نحن</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">مدونات</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link linkHover" href="#">توصل معنا</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تواصل معنا</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link linkHover" href="#">مدونات</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link linkHover" href="#">اعلن معنا</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">الصفحة الرئيسية</a>
                     </li>
                 </ul>
             </div>
-            <div class="d-flex">
-                <a href="#" class="CustomButton">تسجيل الدخول</a>
-            </div>
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./logo.png" alt="Logo">
+            </a>
         </div>
     </nav>
     <!-- Banner section -->
