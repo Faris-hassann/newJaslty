@@ -170,6 +170,18 @@ section .title{
     flex-direction: row;
     gap: 9rem;
 }
+@media (max-width: 750px) {
+    .Icons{
+        gap: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    .Icons{
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 .IconBox {
     display: flex;
     flex-direction: row-reverse;
@@ -373,8 +385,8 @@ select option {
     overflow: hidden;
 }
 .sponserCard {
-    min-width: 300px;
-    height: 400px;
+    min-width: 230px;
+    height: 450px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -562,6 +574,12 @@ p {
     margin-top: 20px;
     grid-gap: 10px;
 }
+@media (max-width: 450px) {
+    .why-choose-box-container{
+        display: initial;
+    }
+}
+
 .why-choose-box{
     display: flex;
     justify-content: flex-start;
@@ -690,7 +708,7 @@ p {
 }
 
 .UserSpeciliest .UserSpeciliestImage{
-    width: 2000px;
+    max-width: 2000px;
     display: flex;
     justify-content: center;
 }
@@ -738,6 +756,11 @@ p {
     text-align: center;
 }
 
+@media (max-width: 750px) {
+    .User .containerBox{
+        width: auto;
+    }
+}
 
 /* footer */
 footer {
