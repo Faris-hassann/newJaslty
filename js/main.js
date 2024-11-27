@@ -52,16 +52,28 @@ const swiper = new Swiper('.mySwiperSpeciality', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        640: {
-            slidesPerView: 4,
+        300: {
+            slidesPerView: 1,
             spaceBetween: 10,
+            centeredSlides: true,  // Center the slide on mobile
+        },
+        450: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            centeredSlides: true,  // Center the slide on mobile
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            centeredSlides: true,  // Center the slide on mobile
         },
         768: {
-            slidesPerView: 6,
+            slidesPerView: 7,
             spaceBetween: 10,
+            centeredSlides: true,  // Center the slide on mobile
         },
         1024: {
-            slidesPerView: 8,
+            slidesPerView: 9,
             spaceBetween: 10,
         },
     },
