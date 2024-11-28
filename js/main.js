@@ -25,19 +25,19 @@ var swiperPopular = new Swiper(".popular__container", {
         },
         // For tablets (768px)
         790: {
-            slidesPerView: 'auto', // Auto width for tablets
-            spaceBetween: 32,  // Space between the slides
+            slidesPerView: 3, // Auto width for tablets
+            spaceBetween: 10,  // Space between the slides
             centeredSlides: true, // Center the single slide
         },
         // For mobile (500px)
         500: {
-            slidesPerView: 'auto', // Auto width on mobile
-            spaceBetween: 32, // Add space between slides on mobile
+            slidesPerView: 2, // Auto width on mobile
+            spaceBetween: 10, // Add space between slides on mobile
             centeredSlides: true, // Center the slide on mobile
         },
         499: {
-            slidesPerView: 'auto', // Auto width on mobile
-            spaceBetween: 32, // Add space between slides on mobile
+            slidesPerView: 2, // Auto width on mobile
+            spaceBetween: 10, // Add space between slides on mobile
             centeredSlides: true,  // Center the slide on mobile
         }
     }
@@ -53,12 +53,12 @@ const swiper = new Swiper('.mySwiperSpeciality', {
     },
     breakpoints: {
         300: {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 10,
             centeredSlides: true,  // Center the slide on mobile
         },
         450: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 10,
             centeredSlides: true,  // Center the slide on mobile
         },
