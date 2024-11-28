@@ -157,7 +157,7 @@ section .title{
     border-radius: 7px;
     margin-top: 15px;
 }
-.landingMsg h1{
+.landingMsg h3{
     color: var(--secondary-color);
 }
 .landingMsg h5{
@@ -514,7 +514,7 @@ select option {
     margin-bottom: 10px;
 }
 
-.SpecialityText h3 {
+.SpecialityText h5{
     font-size: 24px;
     color: var(--main-color);
 }
@@ -534,7 +534,7 @@ select option {
     height: 150px;
 }
 
-.Speciality h3{
+.Speciality h5{
     color: var(--main-color);
 }
 .swiper-wrapper {
@@ -718,7 +718,7 @@ p {
 /* UserSpeciliest */
 .UserSpeciliest{
     background-color: hsl(192deg 17.24% 94.31%);
-    padding: 20px;
+    padding: 10px;
 }
 
 .UserSpeciliest .container {
@@ -743,7 +743,7 @@ p {
 
 .UserSpeciliest img{
     border-radius: 5px;
-    width: 1500px;
+    width: 1000px;
 }
 
 .UserSpeciliestData{
@@ -751,7 +751,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 1500px;
+    width: 1000px;
 }
 .UserSpeciliestData h2.title{
     font-size: 35px;
@@ -789,10 +789,11 @@ p {
     align-items: center;
     width: 30pc;
     padding: 10px;
+    margin-left: 30px
 }
 .User p{
     color: var(--main-color);
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     font-weight: 500;
 }
@@ -980,7 +981,7 @@ footer {
 }
 
 .parallax-1 {
-    background: url('./AboutUsBg.jpg') no-repeat;
+    background: url('Image/AboutUsBg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
