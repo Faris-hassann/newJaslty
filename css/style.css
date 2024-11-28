@@ -128,10 +128,10 @@ section .title{
     color: hsl(191.09deg 44.23% 40.78%);
 }
 .nav-link.active {
-    color: hsl(191.09deg 44.23% 40.78%) !important; /* White text on hover or active */
+    color: black !important; /* White text on hover or active */
     border-radius: 5px; /* Add a rounded look for consistency */
     padding: 5px 10px; /* Add some padding for better appearance */
-    font-weight: 800;
+    font-weight: 700;
     font-size: 20px;
 }
 .nav-link:hover {
@@ -197,10 +197,10 @@ section .title{
 }
 
 .IconBox img{
-    width: auto;
+    width: 60px;
 }
 
-.IconBox-Description h3 {
+.IconBox-Description h5 {
     color: var(--main-color);
 }
 
@@ -377,7 +377,7 @@ select option {
     justify-content: center;
     align-items: center;
     background-color: hsl(191.09deg 44.23% 40.78%);
-    padding: 20px;
+    /* padding: 20px; */
     margin-bottom: 10px;
     flex-direction: column;
     width: 100%;
@@ -385,8 +385,9 @@ select option {
     overflow: hidden;
 }
 .sponserCard {
-    min-width: 230px;
-    height: 450px;
+    min-width: 200px;
+    width: 100px;
+    height: 350px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -394,10 +395,28 @@ select option {
     padding: 20px;
     align-items: center;
 }
+
 .sponserCard img{
-    width: 210px;
+    width: 150px;
     border-radius: 20px;
     max-height: 300px;
+}
+@media (max-width: 450px){
+    .sponserCard{
+        width: 40px;
+        height: 270px;
+        padding: 10px;
+    }
+    .sponserCard img{
+        width: 100px;
+    }
+    .sponserCardData h5{
+        font-size: 20px;
+    }
+    .sponserCardData .sponserP{
+        font-size: 14px;
+        font-weight: 400;
+    }
 }
 .sponserCard .sponserCardData{
     display: flex;
@@ -405,9 +424,12 @@ select option {
     align-items: center;
     flex-direction: column;
 }
-.sponserCardData h3{
+.sponserCardData h5{
     color: var(--main-color);
     margin-top: 7px;
+}
+.sponserCardData .sponserP{
+    font-weight: 600;
 }
 .sponserCardData a{
     margin-top: 7px;
@@ -516,7 +538,7 @@ select option {
     color: var(--main-color);
 }
 .swiper-wrapper {
-    height: 450px; /* The wrapper now will expand to 100% of the swiper's height */
+    height: 390px; /* The wrapper now will expand to 100% of the swiper's height */
     display: flex; /* Ensure the slides are arranged in a row */
 }
 
@@ -574,11 +596,6 @@ p {
     margin-top: 20px;
     grid-gap: 10px;
 }
-@media (max-width: 450px) {
-    .why-choose-box-container{
-        display: initial;
-    }
-}
 
 .why-choose-box{
     display: flex;
@@ -622,6 +639,16 @@ p {
     max-width: 200px;
     margin-top: 30px;
     font-size: 0.9rem;
+}
+@media (max-width: 450px) {
+    .why-choose-box-container{
+        display: initial;
+    }
+    .why-choose-box-text strong {
+        color: var(--main-color);
+        font-weight: 600;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -699,6 +726,7 @@ p {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;    
+    gap: 1rem;
 }
 
 @media (max-width: 750px) {
@@ -715,6 +743,7 @@ p {
 
 .UserSpeciliest img{
     border-radius: 5px;
+    width: 1500px;
 }
 
 .UserSpeciliestData{
@@ -722,43 +751,92 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 1500px;
 }
 .UserSpeciliestData h2.title{
     font-size: 35px;
+    font-weight: 800;
 }
 .UserSpeciliestData p{
     color: var(--main-color);
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
+    padding: 20px;
+    font-weight: 500;
 }
 
+@media (max-width: 450px) {
+    .UserSpeciliest{
+        gap: 0;
+    }
+    .UserSpeciliestData{
+        margin-top: -30px;
+    }
+}
 /* User */
 .User{
     background: url('../Image/user.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    height: auto;
+    height: 60vh;
     display: flex;
     padding: 20px;
-    margin-top: 60px;
 }
 .User .containerBox{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 40pc;
+    width: 30pc;
     padding: 10px;
 }
 .User p{
     color: var(--main-color);
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
+    font-weight: 500;
 }
 
+@media (max-width: 1025px) {
+    .User{
+        height: 35vh;
+    }
+}
+@media (max-width: 450px) {
+    .User{
+        height: 60vh;
+    }
+    .UserSpeciliest h2.title{
+        font-size: 30px;
+    }
+    .User h2.title,
+    .blogs .title{
+        font-size: 37px;
+    }
+    .UserSpeciliest p{
+        font-size: 19px;
+    }
+    .User p{
+        font-size: 20px;
+    }
+}
 @media (max-width: 750px) {
     .User .containerBox{
         width: auto;
+    }
+}
+@media (max-width: 450px) {
+    .swiper-wrapper {
+        height: 305px;
+    }
+    .IconBox{
+        flex-direction: column;
+    }
+    .IconBox h5{
+        font-size: 16px;
+    }
+    .IconBox img {
+        width: 50px;
     }
 }
 
@@ -892,6 +970,7 @@ footer {
     }
 }
 
+
 /* About US Page */
 .parallax {
     min-height: 100vh;
@@ -993,5 +1072,18 @@ footer {
 @media (max-width: 400px) {
     .parallax-inner h1 {
         font-size: 60px;
+    }
+}
+@media (max-width: 450px) {
+    .search-bar .dropdown-container{
+        width: 375px;
+    }
+    .search-bar img{
+        width: 65px;
+        height: 65px;
+        margin-left: 155px;
+    }
+    .UserSpeciliestData{
+        width: auto;
     }
 }
