@@ -774,12 +774,11 @@ p {
     background: url('../Image/user.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 60vh;
     display: flex;
     padding: 20px;
 }
 .User .containerBox{
-    display: flex;
+    display: flex;  
     justify-content: center;
     flex-direction: column;
     align-items: center;
