@@ -794,15 +794,7 @@ p {
     font-weight: 500;
 }
 
-@media (max-width: 1025px) {
-    .User{
-        height: 35vh;
-    }
-}
 @media (max-width: 450px) {
-    .User{
-        height: 60vh;
-    }
     .UserSpeciliest h2.title{
         font-size: 30px;
     }
