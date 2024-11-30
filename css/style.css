@@ -98,6 +98,19 @@ a:hover {
     color: black;
 }
 
+.title{
+    text-align: center;
+    font-size: 45px;
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+
+.SecondTitle{
+    color: var(--main-color);
+    font-weight: 600;
+    text-align: center;
+}
+
 section .title{
     text-align: center;
     font-size: 45px;
@@ -385,21 +398,20 @@ select option {
     overflow: hidden;
 }
 .sponserCard {
-    min-width: 200px;
-    width: 100px;
-    height: 350px;
+    width: 175px;
+    height: 250px;
     background-color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
 }
 
 .sponserCard img{
-    width: 150px;
+    max-width: 100px;
     border-radius: 20px;
-    max-height: 300px;
+    max-height: 100px;
 }
 @media (max-width: 450px){
     .sponserCard{
@@ -461,18 +473,19 @@ select option {
 
 /* Popular Container */
 .popular__container {
-    /* padding: 1rem 0 5rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    overflow: hidden; /* Prevent slides from overflowing the container */
+    box-sizing: border-box; /* Include padding and borders in the width */
 }
 
 @media screen and (min-width: 1023px) {
     .popular__container {
-        /* padding-top: 3rem; */
         flex-direction: row;
-        justify-content: center; /* Ensures it is horizontally centered */
-        gap: 1rem; /* Optionally add space between the slides */
+        justify-content: center; /* Center slides horizontally */
+        gap: 1rem; /* Match with Swiper's spaceBetween setting */
     }
 }
 
@@ -480,24 +493,26 @@ select option {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto; /* Allow dynamic sizing of the wrapper */
+    box-sizing: border-box; /* Include padding and borders */
 }
 
 .swiper-slide {
-    width: auto;  /* Automatically adjust the width based on the content */
-    max-width: none;/* Ensure the slides fill up the available space */
+    flex-shrink: 0; /* Prevent shrinking of slides */
+    box-sizing: border-box; /* Include padding and borders in the width */
 }
 
 @media screen and (max-width: 1023px) {
     .popular__container {
         flex-direction: column; /* Stack items vertically on smaller screens */
-        justify-content: center; /* Ensure proper alignment */
+        justify-content: center; /* Center items properly */
     }
 }
 
 .popular__container, .swiper-wrapper, .swiper-slide {
-    width: 100%;
+    width: auto;
     max-width: 100%;
-    box-sizing: border-box; /* Ensure padding/borders are included in width */
+    box-sizing: border-box; /* Ensure consistent width calculations */
 }
 
 
@@ -512,15 +527,6 @@ select option {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-}
-
-.SpecialityText h5{
-    font-size: 24px;
-    color: var(--main-color);
-}
-
-.Speciality span{
-    color: var(--secondary-color);
 }
 
 .SpecialityLink a {
@@ -538,12 +544,12 @@ select option {
     color: var(--main-color);
 }
 .swiper-wrapper {
-    height: 390px; /* The wrapper now will expand to 100% of the swiper's height */
+    height: 300px; /* The wrapper now will expand to 100% of the swiper's height */
     display: flex; /* Ensure the slides are arranged in a row */
 }
 
 .swiper-slide {
-    width: 100px;
+    width: auto;
     text-align: center;
 }
 
@@ -583,13 +589,6 @@ p {
     /* background-color: #3c8167; */
 }
 
-.why-choose-us-left h3{
-    font-size: 2.6rem;
-    color: var(--main-color);
-    font-weight: 600;
-    line-height: 3.2rem;
-    text-align: center;
-}
 .why-choose-box-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -753,10 +752,7 @@ p {
     flex-direction: column;
     width: 600px;
 }
-.UserSpeciliestData h2.title{
-    font-size: 30px;
-    font-weight: 800;
-}
+
 .UserSpeciliestData p{
     color: var(--main-color);
     font-size: 24px;
@@ -809,10 +805,6 @@ p {
     }
     .UserSpeciliest h2.title{
         font-size: 30px;
-    }
-    .User h2.title,
-    .blogs .title{
-        font-size: 37px;
     }
     .UserSpeciliest p{
         font-size: 19px;
