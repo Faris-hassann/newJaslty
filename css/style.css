@@ -795,6 +795,9 @@ p {
 }
 
 @media (max-width: 450px) {
+    .User{
+        height: auto;
+    }
     .UserSpeciliest h2.title{
         font-size: 30px;
     }
@@ -808,6 +811,9 @@ p {
 @media (max-width: 750px) {
     .User .containerBox{
         width: auto;
+    }
+    .User{
+        height: auto;
     }
 }
 @media (max-width: 450px) {
@@ -1063,10 +1069,10 @@ footer {
     .search-bar .dropdown-container{
         width: 375px;
     }
-    .search-bar img{
-        width: 65px;
-        height: 65px;
-        margin-left: 155px;
+    .search-bar img {
+        width: 150px;
+        height: auto;
+        margin-left: 105px;
     }
     .UserSpeciliestData{
         width: auto;
