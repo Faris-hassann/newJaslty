@@ -45,36 +45,36 @@ var swiperPopular = new Swiper(".popular__container", {
 
 // Swiper for Speciality Section
 const swiper = new Swiper('.mySwiperSpeciality', {
-    slidesPerView: 10, // Adjust the number of slides visible at once
-    spaceBetween: 10, // Reduce or remove space between slides
+    slidesPerView: 12, // Adjust the number of slides visible at once
+    spaceBetween: 0, // Reduce or remove space between slides
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
         300: {
-            slidesPerView: 3,
-            spaceBetween: 10,
+            slidesPerView: 4,
+            spaceBetween: 0,
             centeredSlides: true,  // Center the slide on mobile
         },
         450: {
-            slidesPerView: 3,
-            spaceBetween: 10,
+            slidesPerView: 4,
+            spaceBetween: 0,
             centeredSlides: true,  // Center the slide on mobile
         },
         640: {
-            slidesPerView: 2,
-            spaceBetween: 10,
+            slidesPerView: 4,
+            spaceBetween: 0,
             centeredSlides: true,  // Center the slide on mobile
         },
         768: {
             slidesPerView: 7,
-            spaceBetween: 10,
+            spaceBetween: 0,
             centeredSlides: true,  // Center the slide on mobile
         },
         1024: {
             slidesPerView: 9,
-            spaceBetween: 10,
+            spaceBetween: 0,
         },
     },
 });
