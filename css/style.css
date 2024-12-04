@@ -75,6 +75,18 @@ button {
     align-items: center;
 }
 
+.readMoreBtn{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+    padding: 5px;
+    margin-top: 5px;
+    color: var(--main-color);
+}
+.readMoreBtn:hover{
+    background-color: var(--main-color);
+    color: white;
+}
 .CustomButton:hover {
     color: #ffffff;
 }
@@ -113,9 +125,9 @@ a:hover {
 
 section .title{
     text-align: center;
-    font-size: 45px;
+    font-size: 30px;
     color: var(--secondary-color);
-    margin: 20px;
+    margin: 7px;
     font-weight: 600;
 }
 
@@ -127,7 +139,7 @@ section .title{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
 }
 .navbar-brand img {
-    height: 90px;
+    height: 80px;
     margin-left: 20px;
 }
 .btn-custom {
@@ -141,7 +153,6 @@ section .title{
     color: hsl(191.09deg 44.23% 40.78%);
 }
 .nav-link.active {
-    color: black !important; /* White text on hover or active */
     border-radius: 5px; /* Add a rounded look for consistency */
     padding: 5px 10px; /* Add some padding for better appearance */
     font-weight: 700;
@@ -544,7 +555,7 @@ select option {
     color: var(--main-color);
 }
 .swiper-wrapper {
-    height: 300px; /* The wrapper now will expand to 100% of the swiper's height */
+    height: 150px; /* The wrapper now will expand to 100% of the swiper's height */
     display: flex; /* Ensure the slides are arranged in a row */
 }
 
@@ -757,7 +768,6 @@ p {
     color: var(--main-color);
     font-size: 24px;
     text-align: center;
-    padding: 20px;
     font-weight: 500;
 }
 
@@ -817,7 +827,7 @@ p {
 }
 @media (max-width: 450px) {
     .swiper-wrapper {
-        height: 305px;
+        height: 160px;
     }
     .IconBox{
         flex-direction: column;
@@ -1066,7 +1076,7 @@ footer {
 }
 @media (max-width: 450px) {
     .search-bar .dropdown-container{
-        width: 375px;
+        width: 325px;
     }
     .search-bar img {
         width: 60px;
@@ -1077,3 +1087,4 @@ footer {
         width: auto;
     }
 }
+
