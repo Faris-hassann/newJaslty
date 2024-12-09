@@ -608,6 +608,12 @@ p {
     margin: 20px;
 }
 
+@media (max-width: 550px) {
+    .t-profile{
+        margin: 5px;
+    }
+}
+
 .t-profile-img {
     width: 70px;
     height: 70px;
