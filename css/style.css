@@ -66,7 +66,7 @@ button {
     border: none;
     outline: none;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 16px;
     cursor: pointer;
     padding: 10px 15px;
     height: 53px;
@@ -76,6 +76,10 @@ button {
 }
 
 .readMoreBtn{
+    display: inline-flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     border-radius: 5px;
     border: 1px solid var(--main-color);
@@ -115,6 +119,7 @@ a:hover {
     font-size: 45px;
     color: var(--secondary-color);
     font-weight: 800;
+    margin-top: 10px;
 }
 
 .SecondTitle{
@@ -453,7 +458,6 @@ select option {
 /*== Speciality =======================*/
 .Speciality{
     background-color: hsl(192deg 17.24% 94.31%);
-    padding: 10px;
     height: auto;
 }
 .SpecialityHeader {
@@ -468,7 +472,7 @@ select option {
     text-decoration: none;
 }
 .swiper-wrapper {
-    height: 170px; /* The wrapper now will expand to 100% of the swiper's height */
+    height: 180px; /* The wrapper now will expand to 100% of the swiper's height */
     display: flex; /* Ensure the slides are arranged in a row */
 }
 
@@ -589,7 +593,7 @@ p {
     }
     .IconBox{
         width: 110px;
-        height: 150px;
+        height: 100px;
     }
 }
 
@@ -690,12 +694,14 @@ p {
     justify-content: center;
     flex-direction: column;
     width: 350px;
+    margin-top: -32px;
+    margin-bottom: 10px;
 }
 
 .UserSpeciliest .Data p{
     color: var(--main-color);
     font-size: 16px;
-    text-align: right;
+    text-align: center;
     font-weight: 500;
 }
 
@@ -727,7 +733,7 @@ p {
 .User p{
     color: var(--main-color);
     font-size: 16px;
-    text-align: right;
+    text-align: center;
     font-weight: 500;
 }
 
@@ -742,12 +748,13 @@ p {
         font-size: 19px;
     }
     .User p{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 @media (max-width: 750px) {
     .User .containerBox{
         width: auto;
+        margin-left: 0;
     }
     .User{
         height: auto;
@@ -755,7 +762,7 @@ p {
 }
 @media (max-width: 450px) {
     .swiper-wrapper {
-        height: 160px;
+        height: 180px;
     }
     .IconBox{
         flex-direction: column;
@@ -1015,3 +1022,17 @@ footer {
     }
 }
 
+.mySwiperSpeciality {
+    width: 100%; /* Ensure Swiper container takes full width */
+    height: auto; /* Adjust height as needed */
+}
+
+.mySwiperSpeciality .swiper-wrapper {
+    display: flex; /* Required for Swiper to align slides correctly */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.mySwiperSpeciality .swiper-slide {
+    flex-shrink: 0; /* Prevent slides from shrinking */
+    width: 100%; /* Match slide width to container */
+}
