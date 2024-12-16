@@ -294,7 +294,7 @@ section .title{
 
 .search-bar button {
     color: white;
-    background-color: var(--main-color);
+    background-color: #f9d951;
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
