@@ -61,8 +61,8 @@ button {
 }
 
 .CustomButton {
-    background-color: var(--main-color);
-    color: #ffffff;
+    background-color: #f9d951;
+    color: black;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -155,6 +155,7 @@ section .title{
 }
 .navbar-nav .nav-link{
     color: hsl(191.09deg 44.23% 40.78%);
+    font-weight: 700;
 }
 .nav-link.active {
     border-radius: 5px; /* Add a rounded look for consistency */
@@ -244,6 +245,16 @@ section .title{
 }
 
 /* Search */
+.appointment-search-container{
+    width: 100%;
+    height: 60vh;
+    background: url('../Image/background1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 .search-bar {
     background-color: #f8f9fa;
     border-radius: 8px;
@@ -256,7 +267,7 @@ section .title{
 }
 
 .search{
-    text-align: center;
+    text-align: end;
 }
 
 .search select,
@@ -322,6 +333,7 @@ section .title{
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: left;
+    font-weight: 800;
 }
 
 .dropdown-content {
@@ -483,6 +495,12 @@ select option {
 
 .Speciality h5{
     color: var(--main-color);
+    text-align: center;
+    margin-top: 7px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 26px;
 }
 
 .swiper-slide {
@@ -531,6 +549,7 @@ p {
     grid-template-columns: 0.5fr 0.5fr;
     margin-top: 5px;
     grid-gap: 0px;
+    padding: 15px;
 }
 
 .why-choose-box{
@@ -562,6 +581,9 @@ p {
     font-weight: 400;
     opacity: 0.7;
     text-align: end;
+}
+.why-choose-us-left{
+    margin-top: 10px;
 }
 .why-choose-us-left a{
     background-color: #1a1a1b;
@@ -597,19 +619,28 @@ p {
     }
 }
 
+.landingimg{
+    width: 100%;
+    height: 40vh;
+    background: url('../Image/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* Feedback */
 .Feedback .whyCards{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 .t-profile {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 @media (max-width: 550px) {
