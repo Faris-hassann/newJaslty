@@ -255,6 +255,21 @@ section .title{
     justify-content: center;
     align-items: flex-end;
 }
+@media (max-width: 450px) {
+    .appointment{
+        width: 100%;
+        height: 60vh;
+        background: url('../Image/background1.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .appointment-search-container{
+        background: transparent;
+    }
+}
 .search-bar {
     background-color: #f8f9fa;
     border-radius: 8px;
@@ -742,6 +757,9 @@ p {
     }
     .UserSpeciliestData{
         margin-top: -30px;
+    }
+    .UserSpeciliest .container .userSpeciliestData{
+        margin-top: 0px;
     }
 }
 /* User */
