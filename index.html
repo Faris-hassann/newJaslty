@@ -54,19 +54,21 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./Image/logo.png" alt="Logo">
+            </a>
+            
             <!-- Navbar Toggler for Mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="d-flex">
-                <a href="#" class="btn btn-outline-secondary me-2" style="font-weight: 900;">تسجيل الدخول</a>
-            </div>
             <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="##">أعلن معنا</a>
+                        <a class="nav-link" href="https://wa.me/+962795630308" target="_blank">أعلن معنا</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Blogs">مدونات</a>
@@ -82,15 +84,13 @@
                     </li>
                 </ul>
             </div>
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="./Image/logo.png" alt="Logo">
-            </a>
+            <div class="d-flex">
+                <a href="#" class="btn btn-outline-secondary me-2 mobileRegister" style="font-weight: 900;">تسجيل الدخول</a>
+            </div>
         </div>
     </nav>
     <!-- mobile -->
-    <div class="appointment">
-    </div>
+    <div class="appointment"></div>
     <!-- search section -->
     <div class="appointment-search-container">
         <div class="container mt-2 mb-2">
@@ -250,10 +250,9 @@
                 <img src="./Image/Why4.png" alt="">
                 <!--text-->
                 <div class="why-choose-box-text">
-                    <strong>خصوصيتك أولويتنا</strong>
+                    <strong>السرية التامة</strong>
                     <p>
-                        نقوم بحمايه معلوماتك و الحفاظ علي خصوصياتك
-                    </p>
+                        نقوم بحماية معلوماتك والحفاظ على خصوصيتك بسرية تامة                    </p>
                 </div>
             </div>
             <!--**box**-->
@@ -264,7 +263,7 @@
                 <div class="why-choose-box-text">
                     <strong>جلسات خاصة تُحدث الفرق</strong>
                     <p>
-                        نوفر لك لقاءات مميزة مع أخصائيين محترفين، لتجد الحلول، والدعم، واإلرشاد الذي تستحقه
+                        نوفر لك لقاءات مميزة مع أخصائيين محترفين، لتجد الحلول، والدعم، والإرشاد الذي تستحقه
                     </p>
                 </div>
             </div>
@@ -275,7 +274,7 @@
                 <!--text-->
                 <div class="why-choose-box-text">
                     <strong>نصل إليك أينما كنت</strong>
-                    <p>نستطيع اختيار الاخصائي الأقرب الي منزلك او اختيار المركز / المدرسة الأقرب إليك او عن بع</p>
+                    <p>تستطيع إختيار الأخصائي الأقرب الي منزلك أو إختيار المركز / المدرسة الأقرب إليك أو عن بعد</p>
                 </div>
             </div>
             <!--**box**-->
@@ -284,8 +283,8 @@
                 <img src="./Image/Why1.png" alt="">
                 <!--text-->
                 <div class="why-choose-box-text">
-                    <strong>رسائل غير محدده</strong>
-                    <p>نوفر لك ميزة التواصل مع الخبراء بشكل دائم وباي وقت دون اي محددات</p>
+                    <strong>رسائل غير محدودة</strong>
+                    <p>نوفر لك ميزة التواصل مع الخبراء بشكل دائم وبأي وقت دون اي محددات</p>
                 </div>
             </div>
         </div>
@@ -376,7 +375,7 @@
         <div class="container">
             <div class="userSpeciliestData">
                 <div class="Data">
-                    <h3 class="title">هل تبحث عن أخصائي؟</h3>
+                    <h3 class="title">هل تبحث عن نخبة من الأخصائيين ؟</h3>
                     <h5 class="SecondTitle">ساعدنا في العثور على أفضل أخصائي لك مع جلستي ثيرابي</h5>
                     <p>
                         الآن يمكنك بسهولة البحث عن أخصائي بالقرب منك، ربما في الحي الذي تقيم فيه
@@ -390,16 +389,16 @@
                 </div>
                 <a href="#" class="CustomButton mt-3" style="font-weight: 800;">ابحث عن اخصائي</a>
             </div>
-            <div class="UserSpeciliestImage">
+            <!-- <div class="UserSpeciliestImage">
                 <img src="./Image/specialist.png" alt="">
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- Are you Speciliest -->
     <section class="User" id="AboutUs">
         <div class="container">
             <div class="containerBox">
-                <h2 class="title">هل انت أخصائي؟</h2>
+                <h2 class="title" >هل انت أخصائي؟</h2>
                 <p>
                     أول منصة عربية تدعم الأخصائي والمعالج العربي، حيث نقدم لك جميع الخدمات المتعلقة بالحجوزات، ونوفر لك فرصًا للوصول إلى عدد كبير من المستفيدين الذين يحتاجون إلى خدماتك
                 </p>
@@ -510,12 +509,12 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <!-- Slide 1 -->
-                <div class="carousel-item active">
+                <!-- <div class="carousel-item active">
                     <div class="row">
                         <div class="col-md">
                             <div class="card">
                                 <img src="./Image/AboutUsBg.jpg" class="card-img-top" alt="..."
-                                    style="height: auto; max-height: 300px;">
+                                    style="height: 100px; max-height: 100px;">
                                 <div class="card-body">
                                     <h5 class="card-title">Card 1</h5>
                                     <a href="#" class="CustomButton">Read More</a>
@@ -525,7 +524,7 @@
                         <div class="col-md">
                             <div class="card">
                                 <img src="./Image/AboutUsBg.jpg" class="card-img-top" alt="..."
-                                    style="height: auto; max-height: 300px;">
+                                    style="height: 100px; max-height: 100px;">
                                 <div class="card-body">
                                     <h5 class="card-title">Card 2</h5>
                                     <a href="#" class="CustomButton">Read More</a>
@@ -535,7 +534,7 @@
                         <div class="col-md">
                             <div class="card">
                                 <img src="./Image/AboutUsBg.jpg" class="card-img-top" alt="..."
-                                    style="height: auto; max-height: 300px;">
+                                    style="height: 100px; max-height: 100px;">
                                 <div class="card-body">
                                     <h5 class="card-title">Card 3</h5>
                                     <a href="#" class="CustomButton">Read More</a>
@@ -545,7 +544,7 @@
                         <div class="col-md">
                             <div class="card">
                                 <img src="./Image/AboutUsBg.jpg" class="card-img-top" alt="..."
-                                    style="height: auto; max-height: 300px;">
+                                    style="height: 100px; max-height: 100px;">
                                 <div class="card-body">
                                     <h5 class="card-title">Card 3</h5>
                                     <a href="#" class="CustomButton">Read More</a>
@@ -553,15 +552,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Slide 2 -->
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <div class="row">
                         <div class="col-md">
                             <div class="card">
                                 <img src="./Image/AboutUsBg.jpg" class="card-img-top" alt="..."
-                                    style="height: auto; max-height: 300px;">
+                                    style="height: 50px; max-height: 50px;">
                                 <div class="card-body">
                                     <h5 class="card-title">Card 1</h5>
                                     <a href="#" class="CustomButton">Read More</a>
@@ -571,7 +570,7 @@
                         <div class="col-md">
                             <div class="card">
                                 <img src="./Image/AboutUsBg.jpg" class="card-img-top" alt="..."
-                                    style="height: auto; max-height: 300px;">
+                                    style="height: 50px; max-height: 50px;">
                                 <div class="card-body">
                                     <h5 class="card-title">Card 2</h5>
                                     <a href="#" class="CustomButton">Read More</a>
@@ -581,7 +580,7 @@
                         <div class="col-md">
                             <div class="card">
                                 <img src="./Image/AboutUsBg.jpg" class="card-img-top" alt="..."
-                                    style="height: auto; max-height: 300px;">
+                                    style="height: 50px; max-height: 50px;">
                                 <div class="card-body">
                                     <h5 class="card-title">Card 3</h5>
                                     <a href="#" class="CustomButton">Read More</a>
@@ -591,9 +590,51 @@
                         <div class="col-md">
                             <div class="card">
                                 <img src="./Image/AboutUsBg.jpg" class="card-img-top" alt="..."
-                                    style="height: auto; max-height: 300px;">
+                                    style="height: 50px; max-height: 50px;">
                                 <div class="card-body">
                                     <h5 class="card-title">Card 3</h5>
+                                    <a href="#" class="CustomButton">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Slide 2 -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 1</h5>
+                                    <a href="#" class="CustomButton">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 1</h5>
+                                    <a href="#" class="CustomButton">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 1</h5>
+                                    <a href="#" class="CustomButton">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 1</h5>
                                     <a href="#" class="CustomButton">Read More</a>
                                 </div>
                             </div>
@@ -621,46 +662,36 @@
             <!--**comoany-box**-->
             <div class="footer-company-box">
                 <!--logo-->
-                <a href="#" class="logo"><span class="logo">Jal</span>sty Therapy</a>
+                <a href="./index.html" class="logo">
+                    <img src="./Image/logo.png" alt="" style="width: 75px">
+                </a>
                 <!--details-->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas neque repudiandae nihil.</p>
+                <p style="font-size: 18px; font-weight: 600;">نصل إليك أينما كنت</p>
                 <!--social-box-->
                 <div class="footer-social">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://web.facebook.com/jalsaty.therapy" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/jalsatytherapy.life?igsh=d3BzeDJxZm54bDIw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="tel:+4733378901" target="_blank"><i class="fa-solid fa-phone"></i></a>
                 </div>
             </div>
             <!--**link-box***-->
             <div class="footer-link-box">
-                <strong>Main Link's</strong>
+                <strong> الروابط الرئيسية</strong>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="./index.html">الرئيسية</a></li>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">تواصل معنا</a></li>
+                    <li><a href="#">مدونات</a></li>
+                    <li><a href="#">أعلن معنا</a></li>
                 </ul>
             </div>
             <!--**link-box***-->
             <div class="footer-link-box">
-                <strong>External Link's</strong>
+                <strong>الروابط الفرعية</strong>
                 <ul>
-                    <li><a href="#">Our Product's</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Trem's and Condition's</a></li>
-                </ul>
-            </div>
-            <!--**link-box***-->
-            <div class="footer-link-box">
-                <strong>External Link's</strong>
-                <ul>
-                    <li><a href="#">Our Product's</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Trem's and Condition's</a></li>
+                    <li><a href="#">التخصصات</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
                 </ul>
             </div>
         </div>
@@ -668,7 +699,7 @@
         <!--**bottom**********************-->
         <div class="footer-bottom">
             <span class="footer-owner">Made By Faris Hassan</span>
-            <span class="copyright">&#169; Copyright 2024 - Fox Design</span>
+            <span class="copyright">&#169; Copyright 2024 - Media Gate</span>
         </div>
     </footer>
     <!-- search Bar -->
