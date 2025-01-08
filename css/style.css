@@ -169,7 +169,15 @@ section .title{
     border-radius: 5px; /* Add a rounded look for consistency */
     padding: 5px 10px; /* Add some padding for better appearance */
 }
+nav .container{
+    flex-direction: row-reverse;
+}
 
+@media (max-width: 450px) {
+    .navbar-nav{
+        flex-direction: column-reverse;
+    }
+}
 /* (banner) */
 #banner {
     display: flex;
@@ -248,7 +256,7 @@ section .title{
 .appointment-search-container{
     width: 100%;
     height: 60vh;
-    background: url('../Image/background1.jpg') no-repeat;
+    background: url('../Image/background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -268,6 +276,7 @@ section .title{
     }
     .appointment-search-container{
         background: transparent;
+        /* margin-top: -407px; */
     }
 }
 .search-bar {
@@ -399,7 +408,7 @@ select option {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .search-bar {
-        flex-direction: column; /* Stack the items vertically */
+        flex-wrap: wrap; /* Stack the items vertically */
         align-items: stretch; /* Make items take full width */
     }
 
@@ -517,7 +526,14 @@ select option {
     font-weight: 800;
     font-size: 26px;
 }
-
+@media (max-width: 450px) {
+    .Speciality h5{
+        font-size: 20px;
+    }
+    .why-choose-box {
+        margin-right: 15px;
+    }
+}
 .swiper-slide {
     width: auto;
     text-align: center;
@@ -658,11 +674,6 @@ p {
     margin: 10px;
 }
 
-@media (max-width: 550px) {
-    .t-profile{
-        margin: 5px;
-    }
-}
 
 .t-profile-img {
     width: 70px;
@@ -680,6 +691,15 @@ p {
     object-position: center;
 }
 
+@media (max-width: 550px) {
+    .t-profile{
+        margin: 2px;
+    }
+    .t-profile-img{
+        width: 55px;
+        height: 55px;
+    }
+}
 .t-profile-text {
     display: flex;
     flex-direction: column;
@@ -739,8 +759,8 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 350px;
-    margin-top: -32px;
+    /* width: 350px;
+    margin-top: -32px; */
     margin-bottom: 10px;
 }
 
@@ -780,10 +800,10 @@ p {
     margin-left: 30px
 }
 .User p{
-    color: var(--main-color);
+    color: var(--secondary-color);
     font-size: 16px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 @media (max-width: 450px) {
@@ -918,6 +938,13 @@ footer {
     font-size: 0.9rem;
 }
 
+.footer-company-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 850px) {
     .whyCards {
         width: 100%;
@@ -963,10 +990,11 @@ footer {
 }
 
 .parallax-1 {
+    width: 100%;
+    height: 60vh;
     background: url('../Image/AboutUsBg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 
@@ -1059,12 +1087,12 @@ footer {
 }
 @media (max-width: 450px) {
     .search-bar .dropdown-container{
-        width: 325px;
+        width: 160px;
     }
     .search-bar img {
         width: 60px;
-        height: auto;
-        margin-left: 155px;
+        height: 40px;
+        margin-left: 135px;
     }
     .UserSpeciliestData{
         width: auto;
