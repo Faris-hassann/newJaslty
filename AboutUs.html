@@ -5,48 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta Description -->
-    <meta property="og:image" content="./imgs/logo.png" />
-    <link rel="icon" href="imgs/logo.png">
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="keywords" content="Learn, Maths, Mathmatics, Story, School, Homework, Learning, Education, fun" />
-    <meta property="og:description"
-        content="The best online, free mathmatics learning platform! Summit allows you to learn mathmatics whenever you want and wherever you are! Simply click Start learning to unlock a massive library off free education; Enjoy!" />
-    <!-- style Sheets -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- boxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <!-- Title -->
     <title>Jalsty</title>
 </head>
 
 <body>
-    <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./Image/logo.png" alt="Logo">
+            </a>
+
             <!-- Navbar Toggler for Mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="d-flex">
-                <a href="#" class="btn btn-outline-secondary me-2">تسجيل الدخول</a>
-            </div>
             <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">أعلن معنا</a>
+                        <a class="nav-link" href="https://wa.me/+962795630308" target="_blank">أعلن معنا</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Blogs">مدونات</a>
@@ -55,142 +50,240 @@
                         <a class="nav-link" href="#ContactUs">تواصل معنا</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./AboutUs.html">من نحن</a>
+                        <a class="nav-link" href="./AboutUs.html">من نحن</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">الصفحة الرئيسية</a>
                     </li>
                 </ul>
             </div>
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="./Image/logo.png" alt="Logo">
-            </a>
+            <div class="d-flex">
+                <a href="#" class="btn btn-outline-secondary me-2 mobileRegister" style="font-weight: 900;">تسجيل
+                    الدخول</a>
+            </div>
         </div>
     </nav>
+
     <!-- Start of Body -->
-     <!-- parallax Section -->
-     <section class="parallax parallax-1" id="parallax">
-            <div class="parallax-inner">
-                <h1>من نحن</h1>
-                <h6>Jaslty Therarpy</h6>
+    <!-- parallax Section -->
+    <section class="parallax parallax-1" id="parallax">
+        <div class="parallax-inner">
+            <h1 style="color: #f9d951; font-size: 64px; text-align: center;">من نحن</h1>
+            <h6 style="color: white; text-align: center;">Jaslty Therarpy</h6>
+        </div>
+    </section>
+    <!-- Mission Section -->
+    <section id="mission" class="py-5" dir="rtl">
+        <div class="container">
+            <h2 class="section-title">مهمتنا</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        تقديم منظومة شاملة من الخدمات الاستشارية ضمن إطار عمل مؤسسي تحكمه أخلاقيات عمل ومبادئ إنسانية
+                        ومهنية راسخة، بشكل يواكب متطلبات العصر ويناسب احتياجات جميع العملاء من مختلف المجالات والقطاعات.
+                    </p>
+                    <p>
+                        تحسين مستويات الجودة وتصميم الحلول المناسبة بناءً على متطلبات العملاء ونتائج تحليل الاحتياجات،
+                        وعقد الشراكات الاستراتيجية التي من شأنها تحقيق رؤية "جلستي ثيرابي" وذلك من خلال تقديم خدماتنا
+                        لعملاء من شتى أنحاء الأردن واستقطاب الاخصائيين ذوي الكفاءة العالية.
+                    </p>
+                    <p>
+                        الاستفادة من موارد تكنولوجيا المعلومات والتقنيات الحديثة لتطوير الأداء المؤسسي وتطوير الخدمات
+                        الاستشارية بما يتناسب مع متطلبات العصر المتسارعة.
+                    </p>
+                </div>
             </div>
         </div>
-     </section>
-     <!-- Section1 -->
-      <section class="Class" id="Class">
-        <div class="center-text">
-            <h5>Section 1</h5>
-            <h2>Section 1</h2>
-        </div>
-        <div class="firstClass">
-            <div class="classImg">
-                <img src="./Image/AboutUsBg.jpg" alt="first img">
-            </div>
-            <div class="classText">
-                <h6>Best Online Learning Platform</h6>
-                <h2>Student</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus quis cum, nesciunt doloribus
-                    nemo officia quae placeat vero ullam dicta voluptatem qui rerum velit ut maiores impedit corporis
-                    nisi!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus quis cum, nesciunt doloribus
-                    nemo officia quae placeat vero ullam dicta voluptatem qui rerum velit ut maiores impedit corporis
-                    nisi!
-                </p>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="py-5 bg-light" dir="rtl">
+        <div class="container">
+            <h2 class="section-title">الرؤية</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        أن نكون أهم رائدي الأعمال في مجال الاستشارات ذات الخدمة المنزلية لنوصل خدمة الاستشارة لكل منزل
+                        يحتاجها ولا يستطيع الحصول عليها في مكانها، بحيث نحقق السعادة للناس وأن ننقل خبراتنا من المحلية
+                        إلى العالمية وبالعكس.
+                    </p>
+                </div>
             </div>
         </div>
-      </section>
-      <!-- Section2 -->
-      <section class="Class second" id="Class">
-        <div class="center-text">
-            <h5>Section 2</h5>
-            <h2>Section 2</h2>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="py-5" dir="rtl">
+        <div class="container">
+            <h2 class="section-title">قيمنا</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        إننا في "جلستي ثيرابي" تحكمنا عدد من القيم الأخلاقية والمهنية التي تشكل هويتنا الأساسية، وهو ما
+                        يؤمن به شركاؤنا جميعاً. تعمل هذه القيم على ترشيد قراراتنا وتوجه عملياتنا ومعاملاتنا لضمان أفضل
+                        النتائج وكسب ثقة العملاء والجمهور.
+                    </p>
+                    <ul>
+                        <li>الشفافية</li>
+                        <li>المهنية والاحترافية</li>
+                        <li>التطلع إلى المستقبل</li>
+                        <li>الثقة</li>
+                        <li>المصداقية</li>
+                        <li>الإبداع والابتكار</li>
+                        <li>السرية</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="SecondClass">
-            <div class="classImg">
-                <img src="./Image/AboutUsBg.jpg" alt="first img">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light" dir="rtl">
+        <div class="container">
+            <h2 class="section-title">الخدمات</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>
+                        يستهدف موقع "جلستي ثيرابي" جميع القطاعات من أفراد ومؤسسات، وتمتاز خدماتنا بالجودة والقيمة
+                        الإضافية مما يمنحنا ميزة تنافسية تضعنا في المقدمة. نعتبر الموقع الأول في المملكة الذي يوفر جميع
+                        هذه الخدمات منزلياً وتشمل خدماتنا التصنيفات الرئيسية التالية:
+                    </p>
+                    <h5>1. الاستشارات والعلاج النفسي غير الدوائي</h5>
+                    <p>
+                        نقدم مجموعة متكاملة من الاستشارات والعلاجات النفسية غير الدوائية والتي تشمل:
+                    </p>
+                    <ul>
+                        <li>اضطرابات الشخصيات بأنواعها (قلقة، اعتمادية، حدية، نرجسية...الخ)</li>
+                        <li>اضطرابات التكيف</li>
+                        <li>الرهاب الاجتماعي</li>
+                        <li>نوبات الذعر والهلع</li>
+                        <li>المثلية</li>
+                        <li>العلاج النفسي المدعم بجانب العلاج الدوائي للأمراض النفسية مثل:
+                            <ul>
+                                <li>الفصام</li>
+                                <li>الوسواس القهري</li>
+                                <li>الاكتئاب</li>
+                                <li>الاضطراب الوجداني ثنائي القطب</li>
+                                <li>الهوس</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h5>2. الاستشارات الزوجية والعلاج الزواجي</h5>
+                    <p>
+                        إن خدمات الاستشارات الزوجية المقدمة من "جلستي ثيرابي" تقدّم على أسس علمية وبناءً على أفضل
+                        الممارسات العالمية وعلى أيدي أفضل الخبراء والمستشارين المتخصصين في مجالات الإرشاد الأسري
+                        والزوجي.
+                    </p>
+                    <ul>
+                        <li>مرحلة الخطوبة</li>
+                        <li>الانفصال والطلاق</li>
+                        <li>المشكلات بين الأزواج</li>
+                        <li>مشاكل أبناء الزوج أو الزوجة</li>
+                        <li>المشكلات الجنسية والعاطفية</li>
+                        <li>مشاكل مع أهل الزوج أو الزوجة</li>
+                        <li>مشاكل تعدد الزوجات</li>
+                        <li>اختيار الزوج أو الزوجة</li>
+                        <li>تأخر الزواج</li>
+                        <li>الغيرة والشك</li>
+                        <li>المثلية</li>
+                    </ul>
+                    <h5>3. استشارات للمشاكل الطلابية والجامعية</h5>
+                    <p>
+                        إن خدمات الاستشارات للمشاكل المتعلقة بحياة الطلاب المدرسية والجامعية متعددة، نقدم في "جلستي
+                        ثيرابي" عدة حلول لمشاكل مختلفة منها:
+                    </p>
+                    <ul>
+                        <li>اضطرابات الصحة النفسية، مثل قلق الامتحانات، والرهاب الاجتماعي..الخ</li>
+                        <li>الإدمان وتعاطي المخدرات</li>
+                        <li>الخلافات العائلية</li>
+                        <li>اضطرابات التعلم مثل عدم قدرة الذاكرة على استيعاب المعلومات</li>
+                        <li>اضطرابات السلوك</li>
+                        <li>التمرد والحاجة إلى الاستقلالية</li>
+                        <li>الانطوائية وعدم القدرة على التواصل مع الزملاء والأصدقاء</li>
+                    </ul>
+                    <h5>4. جلسات التربية الخاصة</h5>
+                    <h5>5. جلسات علاج النطق والتخاطب</h5>
+                    <h5>6. جلسات العلاج الوظيفي</h5>
+                    <h5>7. جلسات العلاج الطبيعي</h5>
+                    <h5>8. جلسات تعديل السلوك</h5>
+                </div>
             </div>
-            <div class="classText">
-                <h6>Best Online Learning Platform</h6>
-                <h2>Student</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus quis cum, nesciunt doloribus
-                    nemo officia quae placeat vero ullam dicta voluptatem qui rerum velit ut maiores impedit corporis
-                    nisi!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus quis cum, nesciunt doloribus
-                    nemo officia quae placeat vero ullam dicta voluptatem qui rerum velit ut maiores impedit corporis
-                    nisi!
-                </p>
-            </div>
-      </section>
-      <!-- Section3 -->
-      <section class="Class" id="Class">
-        <div class="center-text">
-            <h5>Section 3</h5>
-            <h2>Section 3</h2>
         </div>
-        <div class="ThirdClass">
-            <div class="classImg">
-                <img src="./Image/AboutUsBg.jpg" alt="first img">
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals" class="py-5" dir="rtl">
+        <div class="container">
+            <h2 class="section-title">أهداف "جلستي ثيرابي"</h2>
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li>توفير خدمة الاستشارات المنزلية دون عناء وجهد الحصول عليها بأماكنها الرسمية</li>
+                        <li>تحقيق الصحة النفسية وسعادة وهناء الفرد</li>
+                        <li>تحقيق التوافق الأسري والزوجي</li>
+                        <li>المساعدة على الفهم والتطور والنمو الذي يساعد وينمي ويطور جميع العلاقات بين أفراد الأسرة
+                            وبالتالي تطور المجتمع</li>
+                        <li>إجراء الدراسات والبحوث في المجالات الاجتماعية المختلفة</li>
+                    </ul>
+                </div>
             </div>
-            <div class="classText">
-                <h6>Best Online Learning Platform</h6>
-                <h2>Student</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus quis cum, nesciunt doloribus
-                    nemo officia quae placeat vero ullam dicta voluptatem qui rerum velit ut maiores impedit corporis
-                    nisi!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus quis cum, nesciunt doloribus
-                    nemo officia quae placeat vero ullam dicta voluptatem qui rerum velit ut maiores impedit corporis
-                    nisi!
-                </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light" dir="rtl">
+        <div class="container">
+            <h2 class="section-title">ميزات "جلستي ثيرابي"</h2>
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li>نوفر دعماً شاملاً لجميع الخدمات الاستشارية التي تحتاجها جميع الأسر (منزلياً)</li>
+                        <li>نقدم خدمات في التعليم وتطوير الذات، ومعالجة التحديات الأسرية</li>
+                        <li>لدينا أفضل الاخصائيين والاستشاريين النفسيين</li>
+                    </ul>
+                </div>
             </div>
-      </section>
-     <!-- End of Body -->
-    <!-- Footer -->
+        </div>
+    </section>
+
+    <!-- End of Body -->
     <footer>
         <div class="footer-container">
             <!--**comoany-box**-->
             <div class="footer-company-box">
                 <!--logo-->
-                <a href="#" class="logo"><span class="logo">Jal</span>sty Therapy</a>
+                <a href="./index.html" class="logo">
+                    <img src="./Image/logo.png" alt="" style="width: 75px">
+                </a>
                 <!--details-->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas neque repudiandae nihil.</p>
+                <p style="font-size: 18px; font-weight: 600;">نصل إليك أينما كنت</p>
                 <!--social-box-->
                 <div class="footer-social">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://web.facebook.com/jalsaty.therapy" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/jalsatytherapy.life?igsh=d3BzeDJxZm54bDIw" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="tel:+4733378901" target="_blank"><i class="fa-solid fa-phone"></i></a>
                 </div>
             </div>
             <!--**link-box***-->
             <div class="footer-link-box">
-                <strong>Main Link's</strong>
+                <strong> الروابط الرئيسية</strong>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="./index.html">الرئيسية</a></li>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">تواصل معنا</a></li>
+                    <li><a href="#">مدونات</a></li>
+                    <li><a href="#">أعلن معنا</a></li>
                 </ul>
             </div>
             <!--**link-box***-->
             <div class="footer-link-box">
-                <strong>External Link's</strong>
+                <strong>الروابط الفرعية</strong>
                 <ul>
-                    <li><a href="#">Our Product's</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Trem's and Condition's</a></li>
-                </ul>
-            </div>
-            <!--**link-box***-->
-            <div class="footer-link-box">
-                <strong>External Link's</strong>
-                <ul>
-                    <li><a href="#">Our Product's</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Trem's and Condition's</a></li>
+                    <li><a href="#">التخصصات</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
                 </ul>
             </div>
         </div>
@@ -198,15 +291,54 @@
         <!--**bottom**********************-->
         <div class="footer-bottom">
             <span class="footer-owner">Made By Faris Hassan</span>
-            <span class="copyright">&#169; Copyright 2024 - Fox Design</span>
+            <span class="copyright">&#169; Copyright 2024 - Media Gate</span>
         </div>
     </footer>
-    <!-- designed by -->
-    <!-- Scripts -->
-    <script src="../js/scripts.js"></script>
-    <!-- Style Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <!-- search Bar -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        document.querySelectorAll('.dropdown-container').forEach(container => {
+            const header = container.querySelector('.dropdown-header');
+            const content = container.querySelector('.dropdown-content');
+            const searchInput = container.querySelector('.dropdown-search');
+            const select = container.querySelector('select');
+
+            // Toggle dropdown visibility on header click
+            header.addEventListener('click', () => {
+                content.classList.toggle('active');
+                searchInput.focus(); // Focus on the search input
+            });
+
+            // Filter options as the user types
+            searchInput.addEventListener('input', () => {
+                const filter = searchInput.value.toLowerCase();
+                Array.from(select.options).forEach(option => {
+                    const text = option.textContent.toLowerCase();
+                    option.style.display = text.includes(filter) ? '' : 'none';
+                });
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (event) => {
+                if (!container.contains(event.target)) {
+                    content.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- Swiper Js -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+
+    <!-- custom Js -->
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
